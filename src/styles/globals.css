@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --white-color:#F5F5F5;
+  --accent-color:#d27785;
+  --black-color:#1e1e1e;
+}
+.layout {
+  @apply max-w-[1280px] lg:max-w-7xl mx-auto;
+}
+
+.component-padding {
+  @apply lg:py-[80px] py-[75px] lg:px-4 px-6;
+}
+
+/* Advertisement Popup Modal */
+.ant-modal-content{
+  padding: 0 !important;
+}
+
+/* webkit scrollbar  */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  max-height: 12px;
+  height: 4px;
+}
+
+iframe {
+  width: 100%;
+}
